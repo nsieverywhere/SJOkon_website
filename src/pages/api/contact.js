@@ -11,9 +11,9 @@ export default function handler(req, res) {
         user: 'nsikansimon@gmail.com', 
         pass: process.env.EMAIL_PASSWORD,
       },
-        tls: {
-          rejectUnauthorized: false,
-        },
+        // tls: {
+        //   rejectUnauthorized: false,
+        // },
       
     });
 
