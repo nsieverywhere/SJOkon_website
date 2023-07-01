@@ -9,41 +9,41 @@ const Footer = () => {
   const [successMessage, setSuccessMessage] = useState("Subscribe to our newsletter");
 
   const handler = async (e) => {
-    const payload = {
-      email: email,
-    };
-    e.preventDefault();
+    // const payload = {
+    //   email: email,
+    // };
+    // e.preventDefault();
 
-    try {
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+    // try {
+    //   const response = await fetch("/api/subscribe", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(payload),
+    //   });
 
-      const data = await response.json();
+    //   const data = await response.json();
 
-      function mailaction() {
-        const successMessage = data.message;
-        setSuccessMessage(successMessage);
+    //   function mailaction() {
+    //     const successMessage = data.message;
+    //     setSuccessMessage(successMessage);
 
-        function clearmessage() {
-          setSuccessMessage("Subscribe to our newsletter");
-        }
+    //     function clearmessage() {
+    //       setSuccessMessage("Subscribe to our newsletter");
+    //     }
 
-        setTimeout(clearmessage, 3000);
-      }
+    //     setTimeout(clearmessage, 3000);
+    //   }
 
-      if (response.ok) {
-        mailaction();
-      } else {
-        mailaction();
-      }
-    } catch (error) {
-      console.log("Error occured:", error);
-    }
+    //   if (response.ok) {
+    //     mailaction();
+    //   } else {
+    //     mailaction();
+    //   }
+    // } catch (error) {
+    //   console.log("Error occured:", error);
+    // }
   };
 
   return (

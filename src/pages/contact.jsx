@@ -11,47 +11,47 @@ const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const handler = async (e) => {
-    const payload = {
-      name: name,
-      email: email,
-      message: message, 
-    }
-    e.preventDefault();
+    // const payload = {
+    //   name: name,
+    //   email: email,
+    //   message: message, 
+    // }
+    // e.preventDefault();
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
+    // try {
+    //   const response = await fetch("/api/contact", {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(payload),
+    //   });
 
-      const data = await response.json();
+    //   const data = await response.json();
 
-      function mailaction() {
-        const successMessage = data.message;
-        setSuccessMessage(successMessage)
+    //   function mailaction() {
+    //     const successMessage = data.message;
+    //     setSuccessMessage(successMessage)
 
-        function clearmessage() {
-          setSuccessMessage("")
-        }
+    //     function clearmessage() {
+    //       setSuccessMessage("")
+    //     }
 
-        setTimeout(clearmessage, 2000);
-      }
+    //     setTimeout(clearmessage, 2000);
+    //   }
 
-      if (response.ok) {
-        mailaction()
+    //   if (response.ok) {
+    //     mailaction()
         
-      } else {
-        mailaction()
-      }
+    //   } else {
+    //     mailaction()
+    //   }
 
       
-    }
-    catch(error) {
-      console.log('Error occured:', error);
-    }
+    // }
+    // catch(error) {
+    //   console.log('Error occured:', error);
+    // }
 
   };
 
