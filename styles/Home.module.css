@@ -1,0 +1,175 @@
+.section1 {
+  background-color: #f3e7d1;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.section1 h2 {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 {
+  background-color: #191919;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper {
+  text-align: center;
+}
+
+.imageContainertext {
+  color: #f3e7d1;
+  /* padding: 3rem; */
+}
+
+.imageContainertext h1 {
+  font-size: 4rem;
+}
+
+.imageContainertext {
+  padding-left: 5rem;
+}
+
+.section3 {
+  background-color: #f3e7d1;
+  min-height: 50vh;
+  color: #191919;
+}
+
+.section3 div {
+  display: flex;
+  justify-content: center;
+}
+
+.partner {
+  padding-top: 2rem;
+}
+
+.section3 div h2 {
+  font-weight: bolder;
+}
+
+.section4 {
+  background-color: #191919;
+  height: 50vh;
+}
+
+.sliderimg {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+  .contactus{
+    background-color: #B97A15;
+    color: #F3E7D1;
+  } */
+
+.contactus:hover {
+  background-color: #926011;
+}
+
+.carouseloverlay {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem;
+  /* width: 40rem; */
+}
+
+.carouseloverlay h2 {
+  margin: 0;
+  color: #191919;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.carouseloverlay p {
+  color: #191919;
+  font-size: 1.5rem;
+}
+
+.section5 {
+  background-color: #191919;
+  color: #f3e7d1;
+  padding: 2rem 6rem;
+  /* margin-top: .5rem; */
+}
+
+.btn1 {
+  height: 3rem;
+  background-color: #b97a15;
+  width: 10rem;
+  border-radius: 0.2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  background-color: #926011;
+}
+
+@media only screen and (max-width: 767px) {
+  .section5 {
+    padding: 1rem;
+  }
+
+  .imageContainertext {
+    padding: 3rem;
+  }
+
+  .imageContainertext h1 {
+    font-size: 2rem;
+  }
+
+  .carouseloverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    padding: 3rem;
+    min-height: 18rem;
+  }
+
+  .carouseloverlay h2 {
+    margin: 0;
+    color: #191919;
+    font-size: 2.7rem;
+    font-weight: bolder;
+  }
+
+  .carouseloverlay p {
+    color: #191919;
+    font-size: 1.2rem;
+  }
+
+  .partnerlogo{
+    margin: 1rem;
+  }
+}

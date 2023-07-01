@@ -1,0 +1,53 @@
+.section1 {
+  height: 100%;
+  padding: 4rem;
+  background-color: #f3e7d1;
+}
+
+.btnSubmit {
+  height: 3rem;
+  background-color: #b97a15;
+  width: 10rem;
+  border-radius: 0.2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.btnSubmit:hover {
+  background-color: #926011;
+  color: #f3e7d1;
+}
+
+.location {
+  height: 25rem;
+  background-color: #212529;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  color: white;
+  padding: 3rem;
+  /* border: 10px solid #926011; */
+}
+
+.location p {
+  font-size: 1.1rem;
+}
+
+.icon {
+  font-size: 16px !important;
+ color: #b97a15;
+ margin-right: .5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .location{
+    margin-top: 2rem;
+
+  }
+}
+

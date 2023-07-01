@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #f3e7d1;
+  backdrop-filter: blur(10px);
+  padding: 1rem 3rem;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 999; */
+  border-bottom: 1px solid #ba7a00;
+}
+
+.navlink {
+  /* color: #2D3748; */
+  color:  #191919;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.navitem {
+  padding: 0.5rem;
+  text-align: center;
+}
+.navlink:hover {
+  color: #ba7a00;
+  /* background-color: #141204; */
+  /* border-bottom: #141204 1px solid; */
+}
+
+
+
+.navlogo{
+    color: #141204;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+

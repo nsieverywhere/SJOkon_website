@@ -1,0 +1,90 @@
+.main {
+  height: 100%;
+}
+
+.section1 {
+  min-height: 100vh;
+  background-color: #f3e7d1;
+  padding: 3rem;
+}
+
+.section2 {
+  margin-top: 2rem;
+}
+
+.fullWidthImage {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bannerCaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+}
+
+.bannerText {
+  font-size: 1rem;
+}
+
+.contactcard {
+  background-color: #191919;
+  height: 20rem;
+  width: 20rem;
+  color: #f3e7d1;
+  padding: 2rem;
+}
+
+.btn1 {
+  height: 3rem;
+  background-color: #b97a15;
+  width: 10rem;
+  border-radius: 0.2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.btn1:hover {
+  background-color: #926011;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner img {
+    height: 25rem;
+  }
+
+  .bannerCaption {
+    width: 25rem;
+  }
+
+  .section2 div{
+    margin: 1rem 0;
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+  }
+}
