@@ -9,8 +9,7 @@ export default function handler(req, res) {
       service: "gmail",
       auth: {
         user: "nsikansimon@gmail.com",
-        // pass: process.env.EMAIL_PASSWORD,
-        pass: "liiuuqmtlpkuprov"
+        pass: process.env.EMAIL_PASSWORD,
       },
       tls: {
         rejectUnauthorized: false,
