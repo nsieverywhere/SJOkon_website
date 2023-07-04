@@ -59,9 +59,40 @@
     height: auto;
   }
   
+  .section5 {
+    background-color: #191919;
+    color: #f3e7d1;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #926011;
+  }
+
+  
+.btn1 {
+  height: 3rem;
+  background-color: #b97a15;
+  width: 10rem;
+  border-radius: 0.2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  background-color: #926011;
+}
+
 @media only screen and (max-width: 767px) {
   .servicediv{
     margin-bottom: 1rem;
+    text-align: center;
+    padding: 2rem;
+
+  }
+
+  .serviceheading p{
+    text-align: center;
   }
   
   .imageContainer{

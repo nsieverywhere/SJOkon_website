@@ -2,6 +2,7 @@ import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import styles from "/styles/Services.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -131,10 +132,27 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="col-lg-4">9</div>
-            <div className="col-lg-4">10</div> */}
+           
+       
           </div>
+          
         </div>
+        <section
+              className={` ${styles.section5}`}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <h4>Looking for a First-Class Engineering Services?</h4>
+              <Link
+                className={`btn btn-primary ${styles.btn1}`}
+                href="/contact"
+              >
+                Contact Us
+              </Link>
+            </section>
       </main>
       <Footer />
     </>
