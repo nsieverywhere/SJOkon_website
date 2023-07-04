@@ -20,7 +20,7 @@ export default function handler(req, res) {
     // Define the email options
     const mailOptions = {
       from: `${email}`, // Replace with your Gmail email address
-      to: 'nsikansimon@gmail.com', // Replace with the recipient's email address
+      to: 'sjokon@gmail.com', // Replace with the recipient's email address
       subject: `${name} has a New Message from S.J Okon Website`,
       text: ` ${message} \n \n From: ${name}`,
     };
