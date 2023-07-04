@@ -59,4 +59,12 @@
     height: auto;
   }
   
+@media only screen and (max-width: 767px) {
+  .servicediv{
+    margin-bottom: 1rem;
+  }
   
+  .imageContainer{
+    margin-bottom: 1rem;
+  }
+}

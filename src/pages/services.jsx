@@ -57,13 +57,15 @@ const Services = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <Image
-                src="/images/services/machining1.jpg"
-                width="500"
-                height="500"
-                className={styles.image}
-                alt="machining"
-              />
+              <div className={`${styles.imageContainer}`}>
+                <Image
+                  src="/images/services/machining1.jpg"
+                  width="500"
+                  height="500"
+                  className={styles.image}
+                  alt="machining"
+                />
+              </div>
             </div>
             <div className={`col-lg-6 ${styles.servicediv}`}>
               <div>
@@ -93,22 +95,27 @@ const Services = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <Image
-                src="/images/services/lagging.jpg"
-                width="500"
-                height="500"
-                className={styles.image}
-                alt="lagging"
-              />
+              <div className={`${styles.imageContainer}`}>
+                <Image
+                  src="/images/services/lagging.jpg"
+                  width="500"
+                  height="500"
+                  className={styles.image}
+                  alt="lagging"
+                />
+              </div>
             </div>
+
             <div className="col-lg-6">
-              <Image
-                src="/images/services/consultancy2.jpg"
-                width="500"
-                height="500"
-                className={styles.image}
-                alt="consultancy"
-              />
+              <div className={`${styles.imageContainer}`}>
+                <Image
+                  src="/images/services/consultancy2.jpg"
+                  width="500"
+                  height="500"
+                  className={styles.image}
+                  alt="consultancy"
+                />
+              </div>
             </div>
             <div className={`col-lg-6 ${styles.servicediv}`}>
               <div>
