@@ -5,6 +5,7 @@
   min-height: 100vh;
   background-color: #f3e7d1;
   padding: 4rem;
+  padding-bottom: 10rem;
 }
 
 .banner {
@@ -31,6 +32,9 @@
 
 .serviceheading p {
   font-size: 1.2rem;
+  /* margin-bottom: 4rem; */
+  text-align: center;
+  padding: 3rem 8rem 4rem 8rem;
 }
 
 .servicediv {
