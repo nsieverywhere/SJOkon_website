@@ -46,23 +46,25 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div
+              className={`col-lg-6 ${styles.imageContainerParent} ${styles.noPadding}`}
+            >
               <div className={`${styles.imageContainer}`}>
                 <Image
                   src="/images/services/welding.jpg"
-                  width="500"
-                  height="500"
+                  fill
                   className={styles.image}
                   alt="welding"
                 />
               </div>
             </div>
-            <div className="col-lg-6">
+            <div
+              className={`col-lg-6 ${styles.imageContainerParent} ${styles.noPadding}`}
+            >
               <div className={`${styles.imageContainer}`}>
                 <Image
                   src="/images/services/machining1.jpg"
-                  width="500"
-                  height="500"
+                  fill
                   className={styles.image}
                   alt="machining"
                 />
@@ -95,24 +97,26 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div
+              className={`col-lg-6 ${styles.imageContainerParent} ${styles.noPadding}`}
+            >
               <div className={`${styles.imageContainer}`}>
                 <Image
                   src="/images/services/lagging.jpg"
-                  width="500"
-                  height="500"
+                  fill
                   className={styles.image}
                   alt="lagging"
                 />
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div
+              className={`col-lg-6 ${styles.imageContainerParent} ${styles.noPadding}`}
+            >
               <div className={`${styles.imageContainer}`}>
                 <Image
                   src="/images/services/consultancy2.jpg"
-                  width="500"
-                  height="500"
+                  fill
                   className={styles.image}
                   alt="consultancy"
                 />
@@ -132,27 +136,21 @@ const Services = () => {
                 </p>
               </div>
             </div>
-           
-       
           </div>
-          
         </div>
         <section
-              className={` ${styles.section5}`}
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <h4>Looking for a First-Class Engineering Services?</h4>
-              <Link
-                className={`btn btn-primary ${styles.btn1}`}
-                href="/contact"
-              >
-                Contact Us
-              </Link>
-            </section>
+          className={` ${styles.section5}`}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h4>Looking for a First-Class Engineering Services?</h4>
+          <Link className={`btn btn-primary ${styles.btn1}`} href="/contact">
+            Contact Us
+          </Link>
+        </section>
       </main>
       <Footer />
     </>
