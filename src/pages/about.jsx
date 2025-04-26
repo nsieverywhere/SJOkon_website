@@ -67,8 +67,8 @@ const About = () => {
                   industry best practices to drive efficiency and deliver
                   optimal outcomes. Our team of skilled professionals stays
                   up-to-date with advancements in the field, enabling us to
-                  provide innovative solutions tailored to our clients&apos; unique
-                  requirements.
+                  provide innovative solutions tailored to our clients&apos;
+                  unique requirements.
                 </p>
               </div>
               <div className="col-lg-4">
@@ -76,16 +76,19 @@ const About = () => {
                 <p>
                   We value our clients and prioritize their satisfaction above
                   all else. Our customer-centric approach means that we listen
-                  to our clients&apos; needs, understand their goals, and tailor our
-                  solutions accordingly.
+                  to our clients&apos; needs, understand their goals, and tailor
+                  our solutions accordingly.
                 </p>
               </div>
             </div>
           </div>
           <div className="col-lg-4 d-flex justify-content-center">
             <div className={` ${styles.contactcard}`}>
-              <h5>How can we help you with your engineering needs?</h5>
-              <Link className={`btn btn-primary ${styles.btn1}`} href="/contact">
+              <h5>We can help you with your engineering needs?</h5>
+              <Link
+                className={`btn btn-primary ${styles.btn1}`}
+                href="/contact"
+              >
                 Contact Us
               </Link>
             </div>
