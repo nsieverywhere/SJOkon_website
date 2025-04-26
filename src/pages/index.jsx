@@ -79,8 +79,9 @@ export default function Home() {
               <div className={` ${styles.carouseloverlay}`}>
                 <h2>Engineering Services</h2>
                 <p>
-                  We Focus on engineering the most efficient solutions that
-                  solve our partners challenges
+                  We <span style={{ fontWeight: "bold" }}>Focus</span> on
+                  engineering the most efficient solutions that solve your
+                  business challenges.
                 </p>
               </div>
             </div>
