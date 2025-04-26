@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import Card from "../../components/card";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import Homecard from "../../components/homecard";
 
 export default function Home() {
   return (
@@ -20,7 +21,12 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <div id="carouselExampleIndicators" className="carousel slide">
+        <div
+          id="carouselExampleIndicators"
+          className="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
           <div className="carousel-indicators">
             <button
               type="button"
@@ -120,7 +126,7 @@ export default function Home() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <section
+        {/* <section
           className={` ${styles.section5}`}
           style={{
             display: "flex",
@@ -132,8 +138,8 @@ export default function Home() {
           <Link className={`btn btn-primary ${styles.btn1}`} href="/contact">
             Contact Us
           </Link>
-        </section>
-        <section className={` ${styles.section1}`}>
+        </section> */}
+        {/* <section className={` ${styles.section1}`}>
           <h2>Why work with Us? </h2>
 
           <div className={`row ${styles.cardContainer}`}>
@@ -153,27 +159,59 @@ export default function Home() {
               image="/images/timing.png"
             />
           </div>
-        </section>
+        </section> */}
         <section className={`row ${styles.section2}`}>
           <div className={`col-lg-6 ${styles.imageContainertext}`}>
             <h1>
-              &quot;At S.J Okon Enterprise, we focus on engineering the
-              future.&quot;
+              <span>
+                &quot;At S.J Okon Enterprise, we focus on engineering the
+                future.&quot;
+              </span>
             </h1>
-            <p>In need engineering solution?</p>
+            <p className={`${styles.subtext}`}>In need engineering solution?</p>
             <Link href="/contact" className={`btn btn-primary ${styles.btn1}`}>
-              Contact Us Today
+              Contact Us
             </Link>
           </div>
           <div className={`col-lg-6 ${styles.imageContainer}`}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/sjokon_engineering_3.jpg"
+                src="/images/S.J_OKON_VEST.jpg"
                 alt="sjworking"
-                height={500}
+                height={600}
                 width={450}
               />
             </div>
+          </div>
+        </section>
+        <section className={`row ${styles.section4}`}>
+          {/* section 4 entering */}
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <Homecard
+              imageUrl="/images/S.J_OKON_FAN_INSTALLATION.jpg"
+              altText="S.J OKON VEST"
+              title="Premium Engineering Equipment Supply"
+              description="Supplying top-tier industrial fans and engineering components to power your operations. Quality products that deliver efficiency and reliability every time"
+            />
+            <Homecard
+              imageUrl="/images/S.J_OKON_MAN_WELDING.jpg"
+              altText="S.J OKON VEST"
+              title="Precision Welding Services"
+              description="Delivering expert welding solutions with unmatched precision and durability. Our skilled craftsmen ensure every joint meets the highest engineering standards."
+            />
+            <Homecard
+              imageUrl="/images/S.J_OKON_MAN_PAINTING.jpg"
+              altText="S.J OKON PAINTING"
+              title="Industrial Painting & Finishing"
+              description="Protect and beautify your structures with our professional painting services. We apply high-performance coatings designed to withstand the toughest conditions."
+            />
+
+            <Homecard
+              imageUrl="/images/S.J_OKON_MEN_HOLDING_DOOR.jpg"
+              altText="S.J OKON VEST"
+              title="Custom Metal Fabrication"
+              description="From design to installation, we specialize in crafting high-quality fabricated doors and structures tailored to your project’s exact specifications."
+            />
           </div>
         </section>
         <section className={`row ${styles.section3}`}>

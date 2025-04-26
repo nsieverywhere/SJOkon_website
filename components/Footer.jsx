@@ -6,7 +6,9 @@ import { useState } from "react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [email, setEmail] = useState("");
-  const [successMessage, setSuccessMessage] = useState("Subscribe to our newsletter");
+  const [successMessage, setSuccessMessage] = useState(
+    "Subscribe to our newsletter"
+  );
 
   const handler = async (e) => {
     const payload = {
@@ -59,9 +61,9 @@ const Footer = () => {
               className={` ${styles.logo}`}
             />
             <p>
-              S.J Okon & Sons Enterprise is Nigeria&apos;s No.1 engineering solution
-              provider, our services range from consultation, procurment and
-              installation of engineering facilities.
+              S.J Okon & Sons Enterprise is Nigeria&apos;s No.1 engineering
+              solution provider, our services range from consultation,
+              procurment and installation of engineering facilities.
             </p>
             <a
               href="https://linkedin.com/sjokon"
