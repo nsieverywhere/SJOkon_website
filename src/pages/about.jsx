@@ -84,7 +84,7 @@ const About = () => {
           </div>
           <div className="col-lg-4 d-flex justify-content-center">
             <div className={` ${styles.contactcard}`}>
-              <h5>We can help you with your engineering needs?</h5>
+              <h5>We can help you with your engineering needs.</h5>
               <Link
                 className={`btn btn-primary ${styles.btn1}`}
                 href="/contact"
