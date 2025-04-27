@@ -21,7 +21,7 @@ export default function handler(req, res) {
       from: "admin@sjokonandsonsnigltd.com",
       // from: `${email}`, // Replace with your Gmail email address
       to: "admin@sjokonandsonsnigltd.com", // Replace with the recipient's email address
-      subject: `A user wants to join S.J Okon newsletter.`,
+      subject: `From Nsikan: A user wants to join S.J Okon newsletter.`,
       text: `Kindly add me to your newsletter, \n My email is: ${email}`,
     };
 
