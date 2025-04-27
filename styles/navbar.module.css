@@ -12,7 +12,7 @@
 
 .navlink {
   /* color: #2D3748; */
-  color:  #191919;
+  color: #191919;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -26,21 +26,17 @@
   /* border-bottom: #141204 1px solid; */
 }
 
+.navlogo {
+  color: #141204;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 2.2rem;
 
-
-.navlogo{
-    color: #141204;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+  /* font-weight: bold; */
 }
-
-
-
 
 @media only screen and (max-width: 767px) {
   .navbar {
-
     padding: 0;
   }
-
 }

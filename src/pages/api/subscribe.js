@@ -20,7 +20,7 @@ export default function handler(req, res) {
     const mailOptions = {
       from: `${email}`, // Replace with your Gmail email address
       to: "nsikansimon@gmail.com", // Replace with the recipient's email address
-      subject: `Add this user to newsletter from S.J Okon Website`,
+      subject: `A user wants to join S.J Okon newsletter.`,
       text: `Kindly add me to your newsletter, \n My email is: ${email}`,
     };
 
@@ -28,7 +28,7 @@ export default function handler(req, res) {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error("Error sending email:", error);
-        res.status(500).json({ message: "Failed to subscribe." });
+        res.status(500).json({ message: "Unable to subscribe at the moment." });
       } else {
         res
           .status(200)

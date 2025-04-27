@@ -12,8 +12,10 @@ function Navbar() {
           width="100"
           height="50"
         />
-        <Link  className={`navbar-brand ${styles.navbarbrand}`} href="/">
-          <h3 className={` ${styles.navlogo}`}>S.J Okon</h3>
+        <Link className={`navbar-brand ${styles.navbarbrand}`} href="/">
+          <h3 className={` ${styles.navlogo}`}>
+            S.J OKON & SONS NIGERIA LIMITED
+          </h3>
         </Link>
         <button
           className="navbar-toggler"
